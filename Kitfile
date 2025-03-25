@@ -1,0 +1,25 @@
+manifestVersion: 1.0
+
+package:
+  name: MovieStreamingModels
+  description: Movie streaming data model for recommendation and analytics
+  license: Apache-2.0
+  authors:
+    - YourName
+
+model:
+  name: snapshot1-model
+  description: First snapshot movie streaming model - RandomForestRecommender
+  framework: scikit-learn
+  license: Apache-2.0
+  path: ./models/model_snapshot1
+  version: 1.0.0
+
+datasets:
+  - name: streaming-data-snapshot1
+    description: First snapshot of movie streaming data
+    path: ./datasets/streaming_data_snapshot1.csv
+
+code:
+  - description: python script for training a model
+    path: ./train_model1.py
